@@ -17,7 +17,7 @@ function cartReducer(state, action) {
                 ...existingItem,
                 quantity: existingItem.quantity + 1
             }
-            updatedItem[existingCartItemIndex] = updatedItem
+            updatedItems[existingCartItemIndex] = updatedItem
         } else {
             updatedItems.push({ ...action.item, quantity: 1 })
         }

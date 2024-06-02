@@ -27,7 +27,6 @@ export default function Meals() {
         fetchMeals()
     }, [fetchMeals])
 
-    console.log('rerender');
 
     return <ul id="meals">
         {
